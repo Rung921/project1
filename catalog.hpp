@@ -39,7 +39,9 @@ public:
 
 	// Accessors.
 	const std::string& getCode() const { return _code; }
+	
 	const std::string& getName() const { return _name; }
+	
 	double getPrice() const { return _price; }
 
 private:
@@ -75,18 +77,12 @@ public:
 	}
 
 	// Accessors.
-	int getMaxProducts() const {
-		return _maxProducts;
-	}
+	int getMaxProducts() const { return _maxProducts; }
 
-	int getNumProducts() const {
-		return _n;
-	}
+	int getNumProducts() const { return _n; }
 
 	// Return true when the catalog cannot fit any more products.
-	bool isFull() const {
-		return _n >= _maxProducts;
-	}
+	bool isFull() const { return _n >= _maxProducts; }
 
 	// Add a new product to the catalog with a given code and name.
 	//
